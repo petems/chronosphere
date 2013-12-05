@@ -20,12 +20,12 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency "thor", "~> 0.18.1"
   gem.add_dependency "middleware" , "~> 0.1.0"
-  gem.add_dependency "shellout"
-  gem.add_dependency "chronic"
+  gem.add_dependency "shellout", "~> 0.5"
+  gem.add_dependency "chronic", "~> 0.10.2"
 
   gem.add_development_dependency "rake", "~> 10.1.0"
   gem.add_development_dependency "rspec-core", "~> 2.13.0"
   gem.add_development_dependency "rspec-expectations", "~> 2.13.0"
   gem.add_development_dependency "rspec-mocks", "~> 2.13.0"
-  gem.add_development_dependency "timecop"
+  gem.add_development_dependency "timecop", "~> 0.7.0"
 end
