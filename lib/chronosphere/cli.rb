@@ -26,6 +26,12 @@ module Chronosphere
       Middleware.sequence_calendar.call({"date" => date})
     end
 
+    desc "since", "Show the days since a certain date and todays date"
+    long_desc "This will print the days since a certain date"
+    def since(date)
+      Middleware.sequence_since.call({"date" => date})
+    end
+
     desc "version", "Show version"
     def version
       say "Chronosphere #{Chronosphere::VERSION}"
