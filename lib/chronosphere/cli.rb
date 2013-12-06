@@ -32,6 +32,12 @@ module Chronosphere
       Middleware.sequence_since.call({"date" => date})
     end
 
+    desc "until", "Show the days until a certain date and todays date"
+    long_desc "This will print the days a certain date is away"
+    def until(date)
+      Middleware.sequence_until.call({"date" => date})
+    end
+
     desc "version", "Show version"
     def version
       say "Chronosphere #{Chronosphere::VERSION}"

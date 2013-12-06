@@ -12,10 +12,10 @@ describe Chronosphere::CLI do
     Timecop.return
   end
 
-  describe "since" do
+  describe "until" do
     it "returns the amount of days until a date" do
-      @cli.since('a year ago')
-      expect($stdout.string).to eq "It's been 365 days since a year ago\n"
+      @cli.until('a year from now')
+      expect($stdout.string).to eq "It'll be 366 days until a year from now\n"
     end
   end
 end
