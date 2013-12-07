@@ -38,6 +38,12 @@ module Chronosphere
       Middleware.sequence_until.call({"date" => date})
     end
 
+    desc "weekday", "Show the weekday of a given date"
+    long_desc "This will print the weekday (Monday, Tuesday etc) of a given date"
+    def weekday(date)
+      Middleware.sequence_weekday.call({"date" => date})
+    end
+
     desc "version", "Show version"
     def version
       say "Chronosphere #{Chronosphere::VERSION}"
