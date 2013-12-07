@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Chronosphere::VERSION
   gem.authors       = ["Peter Souter"]
   gem.email         = ["p.morsou@gmail.com"]
-  gem.description   = %q{A command line tool for watching Twitch.tv streams}
-  gem.summary       = %q{Chronosphere is a CLI for Twitch.tv, to allow watching streams without a browser}
+  gem.description   = %q{A command line tool for various calendar and date tasks}
+  gem.summary       = %q{Chronosphere is a CLI for dates and calendar tasks.}
   gem.homepage      = "https://github.com/petems/chronosphere"
   gem.license       = 'MIT'
 
