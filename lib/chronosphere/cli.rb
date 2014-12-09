@@ -25,6 +25,14 @@ module Chronosphere
     def calendar(date)
       Middleware.sequence_calendar.call({"date" => date})
     end
+    desc "cal", "An alias for calendar"
+    long_desc "`chronosphere help calendar` for full details"
+    alias :cal :calendar
+
+    desc "christmas", "Get days until christmas"
+    def christmas
+      Middleware.sequence_christmas.call()
+    end
 
     desc "since", "Show the days since a certain date and todays date"
     long_desc "This will print the days since a certain date"
