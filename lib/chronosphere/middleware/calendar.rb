@@ -14,7 +14,7 @@ module Chronosphere
         say Calendar(Date.parse(parsed_date.to_s)).print
 
         @app.call(env)
-        
+
       end
     end
   end
