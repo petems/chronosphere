@@ -1,3 +1,4 @@
+# encoding: utf-8
 module Chronosphere
   module Middleware
     class Christmas < Base
