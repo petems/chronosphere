@@ -17,9 +17,9 @@ module Chronosphere
           exit 1
         end
 
-        days_since = (Date.parse(parsed_date.to_s) - Date.today).to_i
+        days_until = (Date.parse(parsed_date.to_s) - Date.today).to_i
 
-        say "It'll be #{days_since} days until #{cli_date}"
+        say "It'll be #{days_until} days until #{cli_date}"
 
         @app.call(env)
       end

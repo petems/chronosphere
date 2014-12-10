@@ -4,6 +4,7 @@ module Chronosphere
   module Middleware
     autoload :Base, "chronosphere/middleware/base"
     autoload :Calendar, "chronosphere/middleware/calendar"
+    autoload :Christmas, "chronosphere/middleware/christmas"
     autoload :Since, "chronosphere/middleware/since"
     autoload :Until, "chronosphere/middleware/until"
     autoload :Weekday, "chronosphere/middleware/weekday"
@@ -29,6 +30,12 @@ module Chronosphere
     def self.sequence_weekday
       ::Middleware::Builder.new do
         use Weekday
+      end
+    end
+
+    def self.sequence_christmas
+      ::Middleware::Builder.new do
+        use Christmas
       end
     end
 
